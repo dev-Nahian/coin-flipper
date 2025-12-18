@@ -42,7 +42,7 @@ export default function CoinFlip() {
           </div>
 
           {/* Coin Container */}
-          <div className="relative h-64 flex items-center justify-center">
+          <div className="relative h-64 flex items-center justify-center" onClick={flipCoin}>
             <div className={`coin-container ${isFlipping ? "flipping" : ""} ${result ? `show-${result}` : ""}`}>
               <div className="coin">
                 <div className="coin-side coin-heads">
